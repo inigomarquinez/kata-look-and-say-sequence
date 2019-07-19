@@ -1,0 +1,19 @@
+{
+  "name": "look-and-say-sequence",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inigomarquinez/look-and-say-sequence.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inigomarquinez/look-and-say-sequence/issues"
+  },
+  "homepage": "https://github.com/inigomarquinez/look-and-say-sequence#readme"
+}
