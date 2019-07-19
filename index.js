@@ -28,19 +28,27 @@ const main = async () => {
     await question1()
     await question2()
 
-    const numberArr = seed.split('')
-    let newSequenceString = '';
-    let count = 1;
-    for(i=0; i < numberArr.length; i++) {
-        if (numberArr[i] === numberArr[i+1]) {
-            count++;
-        } else {
-            newSequenceString += count.toString() + numberArr[i].toString();
-            count = 1;
+    let finalSequence = seed;
+
+
+    while (finalSequence.length < sequenceLength) {
+        const numberArr = finalSequence.split('')
+        finalSequence = '';
+        let count = 1;
+        for(i=0; i < numberArr.length; i++) {
+            if (numberArr[i] === numberArr[i+1]) {
+                count++;
+            } else {
+                finalSequence += count.toString() + numberArr[i].toString();
+                count = 1;
+            }
         }
+
+        console.log('Sequence: ', finalSequence, (finalSequence.length));
     }
     
-    console.log('Sequence', newSequenceString);
+    
+    console.log('Sequence', finalSequence);
     rl.close()
 }
 
