@@ -27,7 +27,7 @@ const question2 = () => new Promise((resolve, reject) => {rl.question('Length of
 const main = async () => {
     await question1()
     await question2()
-    
+
     const numberArr = seed.split('')
     let newSequenceString = '';
     let count = 1;
